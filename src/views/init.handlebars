@@ -1,0 +1,273 @@
+<nav class="bg-gradient-to-r from-blue-400 to-sky-900">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-36">
+            <!-- Logo -->
+            <a href="/" class="flex-shrink-0 flex items-center mt-5">
+               <img src="https://i.ibb.co/6mxfdhY/logo2.png" alt="logo" width="60" height="60">
+                <span class="ml-2 text-white text-lg font-semibold ">MHOA-Calzados</span>
+            </a>
+
+            <!-- Menú móvil -->
+            <div class="flex items-center sm:hidden">
+                <button id="mobile-menu-button"
+                    class="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <span class="sr-only">Abrir menu principal</span>
+                    <svg class="h-6 w-6 transform hover:rotate-90 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menú de navegación -->
+            <div class="hidden sm:flex sm:space-x-4 mt-5">
+                <a href="/home"
+                    class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    <span class="text-lg">Inicio</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                </a>
+                <a href="/products"
+                    class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                        <path
+                            d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                    </svg>
+                    <span class="text-lg">Tienda</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                </a>
+                <a href="/cart"
+                    class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                    <span class="text-lg">Pedidos</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                </a>
+            </div>
+
+
+
+
+
+
+
+            <!-- Iconos notificaction and Profile -->
+            <div class="hidden sm:flex sm:items-center sm:ml-6 ">
+                <button
+                    class="text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors duration-300 mt-5">
+                    <span class="sr-only mt-5">Ver notificaciones</span>
+                    <svg class="h-6 w-6 transform hover:scale-110 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0">
+                        </path>
+                    </svg>
+                </button>
+
+                <!-- Perfil del usuario -->
+                <div class="ml-3 relative ">
+                    <button
+                        class="text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors duration-300 mt-5">
+                        <a href="/profile"
+                            class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            <span class="text-lg">Perfil</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/home"
+                class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                </svg>
+                <span>Inicio</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                </svg>
+            </a>
+            <a href="/products"
+                class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z" />
+                </svg>
+                <span>Tienda</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                </svg>
+            </a>
+            <a href="/cart"
+                class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+                <span>Pedidos</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                </svg>
+            </a>
+
+
+            <a href="/profile"
+                class="text-white hover:text-white px-3 py-2 text-sm font-medium flex items-center space-x-2 transition-colors  hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="h-6 w-auto transform hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <span>Perfil</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                    class="w-4 h-4 ml-1 transform rotate-180 hover:scale-110 transition-transform" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 11.354a.5.5 0 0 0 0-.708L2.707 7.5H12.5a.5.5 0 0 0 0-1H2.707l3.647-3.646a.5.5 0 0 0 0-.708a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708 0z" />
+                </svg>
+            </a>
+
+
+        </div>
+    </div>
+    </div>
+</nav>
+
+<div class="h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider">
+    <div
+        class="bg-gradient-to-r from-blue-400 to-sky-900 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+        <h2 class="text-4xl max-w-md">Cansado de buscar sitios donde no son de confianza?</h2>
+        <p class="max-w-md">LLegaste al lugar Correcto!.</p>
+    </div>
+    <div
+        class="bg-gradient-to-r from-blue-400 to-sky-900 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+        <h2 class="text-4xl max-w-md">En Mhoa-Calzados tenemos los mejores prodcutos y de calidad!</h2>
+        <p class="max-w-md">Rapido, barato y sin tantas complicaciones</p>
+    </div>
+    <div
+        class="bg-gradient-to-r from-blue-400 to-sky-900 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+        <h1 class="text-6xl max-w-md">MHOA-Calzados</h1>
+        <p class="max-w-md">Desliza para mas infomacion o presiona aqui <a href="/products"></a> Para poder ver nuestros
+            calzados</p>
+    </div>
+</div>
+
+<div class="bg-gray-100 py-24 sm:py-32">
+    <div class="container mx-auto px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl text-center">
+            <h2 class="text-5xl font-semibold leading-10 text-black mb-8">Descubre las
+                ventajas de elegir Mhoa-Calzados</h2>
+            <p class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl text-black">¡Que esperas para tener tu calzado!</p>
+            <p class="mt-6 text-lg leading-7 text-black">En Mhoa-Calzados
+                Te mostramos los mejores calzados con una calidad
+                premium y resistentes </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16">
+
+            <div
+                class="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 group">
+                <img src="https://imgs.search.brave.com/134bmQq5xOP6ryqjRxSaL6FGYDRV81LMkDSh4M6a1EU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kMWVp/cG0zdno0MGh5MC5j/bG91ZGZyb250Lm5l/dC9pbWFnZXMvU1NB/Qy1CbG9nL3NvbHVj/aW9uZXMtZXhwZXJp/ZW5jaWEtY2xpZW50/ZS5qcGc"
+                    alt="Asesoramiento Personalizado" class="w-full h-64 object-cover" />
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-black">Busca un calzados para ti</h3>
+                    <p class="text-gray-600 text-lg mt-2">Los calzados son echos de un material resistentes para cada dia y sobre
+                        todo comodidad para tus pies.
+                    </p>
+                    <button class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href=""
+                            class="rounded-md bg-green-400 px-6 py-4 text-lg font-semibold text-white shadow-lg transition duration-200 transform hover:scale-105">Descubrir</a>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 group">
+                <img src="https://imgs.search.brave.com/rvepn9ullPkGPOnyUoqPz3L4m-mIMANlqu8H1JikEmk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2V1cGUuY29tL2lt/YWdlcy9lYXN5Ymxv/Z19hcnRpY2xlcy80/NTk0L2IyYXAzX2xh/cmdlX3F1ZS1zZS1o/YWNlLWVuLXVuYS1t/YWVzdHJpYS1lbi1m/aW5hbnphcy5qcGc"
+                    alt="Financiamiento Flexible" class="w-full h-64 object-cover" />
+                <div class="p-4">
+                    <h3 class="text-2xl font-semibold text-black">Metodos de Pagos</h3>
+                    <p class="text-gray-600 text-lg mt-2">Contamos con distintos metodos de pago 
+                        ya sea por tarjetas de credito, debito y transferencias.
+                    </p>
+                    <button class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href=""
+                            class="rounded-md bg-green-400 px-6 py-4 text-lg font-semibold text-white shadow-lg transition duration-200 transform hover:scale-105">Contactar</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('#slider');
+        setTimeout(function moveSlide() {
+            const max = slider.scrollWidth - slider.clientWidth;
+            const left = slider.clientWidth;
+
+            if (max === slider.scrollLeft) {
+                slider.scrollTo({ left: 0, behavior: 'smooth' })
+            } else {
+                slider.scrollBy({ left, behavior: 'smooth' })
+            }
+
+            setTimeout(moveSlide, 2000)
+        }, 2000)
+
+    })
+</script>
